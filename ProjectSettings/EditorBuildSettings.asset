@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Menu.unity
+    guid: d71415ae7f7c29e4fb101d07b18b58c3
+  - enabled: 0
+    path: Assets/Scenes/SampleScene.unity
+    guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/Scene1.unity
+    guid: 763dcda426e975b44a5e4687c1250499
+  - enabled: 1
+    path: Assets/Scenes/Scene2.unity
+    guid: 49616c88f7150694aa6ca103195ce080
+  - enabled: 1
+    path: Assets/Scenes/SnailBoss_1.unity
+    guid: 82e8444aab9f7aa45ae85123ed78bcae
+  - enabled: 1
+    path: Assets/Scenes/SnailBoss_2.unity
+    guid: dc5b410f3ed89c14cac817a036ded8a5
+  - enabled: 1
+    path: Assets/Scenes/End.unity
+    guid: ffbb66d801e83db409048a5a416cd667
+  m_configObjects: {}
