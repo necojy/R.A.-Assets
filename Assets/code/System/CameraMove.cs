@@ -5,6 +5,7 @@ using UnityEngine;
 public class CameraMove : MonoBehaviour
 {
     public Transform target;
+    public Vector2 offset;
     public double smoothing = 1;
 
     public Vector2 minPos,maxPos;
@@ -14,7 +15,7 @@ public class CameraMove : MonoBehaviour
         {
             if (transform.position != target.position)
             {
-                Vector3 targetPos = target.position;
+                Vector3 targetPos = new Vector3(target.position.x - offset.x,target.position.y - offset.y,target.position.z);
                 targetPos.x = Mathf.Clamp(targetPos.x,minPos.x,maxPos.x); //用於將一個值(targetPos.x)限制在指定的範圍內(min,max)。
                 targetPos.y = Mathf.Clamp(targetPos.y,minPos.y,maxPos.y) ;//+ 0.25f; 
                 transform.position = Vector3.Lerp(transform.position, targetPos, (float)smoothing);

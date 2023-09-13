@@ -84,7 +84,6 @@ GameObject:
   - component: {fileID: 1177455408068216521}
   - component: {fileID: 5086385712246590635}
   - component: {fileID: 2767796087473466742}
-  - component: {fileID: 6193375526410239754}
   m_Layer: 0
   m_Name: MainBody
   m_TagString: Enemy
@@ -149,7 +148,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -957452809
-  m_SortingLayer: -2
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 5104d4129533bcf419b16c68832cb366, type: 3}
   m_Color: {r: 0, g: 0, b: 0, a: 1}
@@ -232,19 +231,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 6.1875, y: 3.5}
   m_EdgeRadius: 0
---- !u!114 &6193375526410239754
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1177455408068216535}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6bc47a422a35be04797f42ab688096a4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  health: 3
 --- !u!1 &1177455408745717625
 GameObject:
   m_ObjectHideFlags: 0
@@ -258,7 +244,7 @@ GameObject:
   - component: {fileID: 3647934837830131952}
   m_Layer: 0
   m_Name: HitBox
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -524,7 +510,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -957452809
-  m_SortingLayer: -2
+  m_SortingLayer: 3
   m_SortingOrder: 2
   m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

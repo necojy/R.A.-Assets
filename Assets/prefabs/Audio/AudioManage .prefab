@@ -743,7 +743,7 @@ MonoBehaviour:
     source: {fileID: 0}
     loop: 0
   - name: RobotWalk
-    clip: {fileID: 8300000, guid: e2efb0df54e03344baa60910fcebfc90, type: 3}
+    clip: {fileID: 8300000, guid: 5bb315e7045b38d44bdc05b6068a0e2c, type: 3}
     volume: 1
     pitch: 0
     source: {fileID: 0}

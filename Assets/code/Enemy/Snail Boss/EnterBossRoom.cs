@@ -13,6 +13,7 @@ public class EnterBossRoom : MonoBehaviour
     public CameraShake cameraShake;
     public float duration = 1.0f;
     public float magnitude = 1f;
+    public float newViewSize = 65f;
     #endregion
     
     private CameraMove cameraMove;
@@ -41,7 +42,7 @@ public class EnterBossRoom : MonoBehaviour
     }
     IEnumerator TimeToDel()
     {
-        Camera.main.fieldOfView = 65f;
+        Camera.main.fieldOfView = newViewSize;
         yield return new WaitForSeconds(duration);
         Destroy(gameObject);
     }

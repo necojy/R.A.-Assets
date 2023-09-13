@@ -3555,22 +3555,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 928814239}
     m_Modifications:
-    - target: {fileID: 2625158469630410848, guid: 975d4bb5f8884374c96ee128824f9433, type: 3}
-      propertyPath: m_Layer
-      value: 12
-      objectReference: {fileID: 0}
-    - target: {fileID: 2625158469665352507, guid: 975d4bb5f8884374c96ee128824f9433, type: 3}
-      propertyPath: m_IsTrigger
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2625158469665352645, guid: 975d4bb5f8884374c96ee128824f9433, type: 3}
-      propertyPath: m_Layer
-      value: 12
-      objectReference: {fileID: 0}
-    - target: {fileID: 2625158470145941569, guid: 975d4bb5f8884374c96ee128824f9433, type: 3}
-      propertyPath: m_Layer
-      value: 12
-      objectReference: {fileID: 0}
     - target: {fileID: 2625158470209640245, guid: 975d4bb5f8884374c96ee128824f9433, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -3618,18 +3602,6 @@ PrefabInstance:
     - target: {fileID: 2625158470209640247, guid: 975d4bb5f8884374c96ee128824f9433, type: 3}
       propertyPath: m_Name
       value: "\u5B89\u5353\u6A5F\u5668\u4EBA (1)"
-      objectReference: {fileID: 0}
-    - target: {fileID: 2625158470387153073, guid: 975d4bb5f8884374c96ee128824f9433, type: 3}
-      propertyPath: m_Layer
-      value: 12
-      objectReference: {fileID: 0}
-    - target: {fileID: 2625158470387153079, guid: 975d4bb5f8884374c96ee128824f9433, type: 3}
-      propertyPath: m_IsTrigger
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8059147007986878515, guid: 975d4bb5f8884374c96ee128824f9433, type: 3}
-      propertyPath: m_SpriteTilingProperty.oldSize.y
-      value: 24.94336
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 975d4bb5f8884374c96ee128824f9433, type: 3}
@@ -7048,7 +7020,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1793380762
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7698,22 +7670,6 @@ PrefabInstance:
     - target: {fileID: 6360044052103978993, guid: 82bb936f2bcd87942bbd97d51c268ed0, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6360044052103978998, guid: 82bb936f2bcd87942bbd97d51c268ed0, type: 3}
-      propertyPath: MonsterSound.Array.size
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 6360044052103978998, guid: 82bb936f2bcd87942bbd97d51c268ed0, type: 3}
-      propertyPath: MonsterSound.Array.data[2].clip
-      value: 
-      objectReference: {fileID: 8300000, guid: be2f25bd01cdd5745a98451d22458b7d, type: 3}
-    - target: {fileID: 6360044052103978998, guid: 82bb936f2bcd87942bbd97d51c268ed0, type: 3}
-      propertyPath: MonsterSound.Array.data[2].name
-      value: RobotWalk
-      objectReference: {fileID: 0}
-    - target: {fileID: 6360044052103978998, guid: 82bb936f2bcd87942bbd97d51c268ed0, type: 3}
-      propertyPath: MonsterSound.Array.data[2].volume
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6360044052103978999, guid: 82bb936f2bcd87942bbd97d51c268ed0, type: 3}
       propertyPath: m_Name

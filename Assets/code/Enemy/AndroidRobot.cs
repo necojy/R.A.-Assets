@@ -91,9 +91,9 @@ public class AndroidRobot : MonoBehaviour
             transform.localScale = new Vector2(Mathf.Sign(other.transform.position.x - transform.position.x) * Mathf.Abs(transform.localScale.x), transform.localScale.y);
             isAttack = true;
             if (isGround) animator.SetBool("canRun", true);
-            moveSpeed = tempSpeed * 2;
+            moveSpeed = tempSpeed * 3;
         }
-    }
+    }   
     private void OnTriggerExit2D(Collider2D other)
     {
 
