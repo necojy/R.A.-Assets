@@ -792,6 +792,18 @@ MonoBehaviour:
     pitch: 0
     source: {fileID: 0}
     loop: 0
+  - name: RobotcArm00
+    clip: {fileID: 8300000, guid: e83f2bd7ba898b841aec12bfe2dc2c05, type: 3}
+    volume: 1
+    pitch: 0
+    source: {fileID: 0}
+    loop: 0
+  - name: RobotcArm01
+    clip: {fileID: 8300000, guid: 24fc05b11fe78fb4cb490f5f61207469, type: 3}
+    volume: 1
+    pitch: 0
+    source: {fileID: 0}
+    loop: 0
   UISound:
   - name: SavePoint
     clip: {fileID: 8300000, guid: ba92f37961a0e74498d82a1d877f13fe, type: 3}

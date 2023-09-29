@@ -28,6 +28,10 @@ public class RoboticArm : MonoBehaviour
     {
         canAttack = false;
         yield return new WaitForSeconds(waitForAttack); //等待waitForAttack後攻擊
+
+        if(Random.Range(1,3) == 1) AudioManager.Instance.PlayItem("RobotcArm00");
+        else AudioManager.Instance.PlayItem("RobotcArm01");
+
         animator.SetBool("canAttack",true);
         yield return new WaitForSeconds(0.3f); //播放動畫時間
         animator.SetBool("canAttack",false);

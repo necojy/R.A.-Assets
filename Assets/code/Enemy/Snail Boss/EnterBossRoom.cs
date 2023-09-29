@@ -36,7 +36,8 @@ public class EnterBossRoom : MonoBehaviour
         while(count < collapseFloor.Length)
         {
             if(collapseFloor[count] != null) collapseFloor[count++].CanBreak = true;
-            yield return new WaitForSeconds(0.1f);
+            AudioManager.Instance.PlayItem("BreakFloor");
+            yield return new WaitForSeconds(0.25f);
         }
         
     }

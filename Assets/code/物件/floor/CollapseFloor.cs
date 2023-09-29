@@ -17,7 +17,6 @@ public class CollapseFloor : MonoBehaviour
         if(CanBreak)
         {
             anim.SetBool("CanBreak",true);
-            AudioManager.Instance.PlayItem("BreakFloor");
             Invoke("Delete", WaitTime);
         }
     }

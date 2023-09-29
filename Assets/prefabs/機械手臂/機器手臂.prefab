@@ -9428,7 +9428,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d71aee641d39b284c8b63425e03d829c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waitForAttack: 0.6
+  waitForAttack: 0.85
 --- !u!95 &5188517293050041215
 Animator:
   serializedVersion: 5
