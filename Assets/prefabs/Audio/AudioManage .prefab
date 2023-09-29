@@ -737,7 +737,7 @@ MonoBehaviour:
     source: {fileID: 0}
     loop: 0
   - name: DeadMyself
-    clip: {fileID: 8300000, guid: fc6cf31a8897bf947a289e0736b07af6, type: 3}
+    clip: {fileID: 8300000, guid: 21e6eff0e70674c438194beba4305ba6, type: 3}
     volume: 1
     pitch: 0
     source: {fileID: 0}
@@ -804,6 +804,12 @@ MonoBehaviour:
     pitch: 0
     source: {fileID: 0}
     loop: 0
+  - name: TransportBelt
+    clip: {fileID: 8300000, guid: e3ffd16a06560674d933983475213456, type: 3}
+    volume: 1
+    pitch: 0
+    source: {fileID: 0}
+    loop: 0
   UISound:
   - name: SavePoint
     clip: {fileID: 8300000, guid: ba92f37961a0e74498d82a1d877f13fe, type: 3}
@@ -844,6 +850,7 @@ MonoBehaviour:
   isRobotWalkPlaying: 0
   isFiringRpgAPlaying: 0
   isFiringRpgBPlaying: 0
+  isTransportBeltPlaying: 0
 --- !u!1 &6360044052677929959
 GameObject:
   m_ObjectHideFlags: 0
