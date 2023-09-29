@@ -65,7 +65,6 @@ public class TransportBelt : MonoBehaviour
             {
                 PlayerMove move = other.collider.GetComponent<PlayerMove>();
                 move.speed = playerTempMoveSpeed;
-                Debug.Log("exit" + playerTempMoveSpeed);
             }
         }
     }

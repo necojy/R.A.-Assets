@@ -6,6 +6,7 @@ public class HitBox : MonoBehaviour
 {
     public int dmg = 1;
     public float repel = 20f;//被擊退的參數
+    public bool needParendObject = true;
     private bool ishurt = false;
     private bool detected = true;
     private SpriteRenderer parentSpriteRenderer;
@@ -13,8 +14,11 @@ public class HitBox : MonoBehaviour
 
     private void Start()
     {
-        parentSpriteRenderer = transform.parent.parent.GetComponent<SpriteRenderer>();
-        parentRb = transform.parent.parent.GetComponent<Rigidbody2D>();
+        if (needParendObject)
+        {
+            parentSpriteRenderer = transform.parent.parent.GetComponent<SpriteRenderer>();
+            parentRb = transform.parent.parent.GetComponent<Rigidbody2D>();
+        }
     }
     private void OnTriggerEnter2D(Collider2D other)
     {
