@@ -14,9 +14,9 @@ public class enemyBehavior : MonoBehaviour
     [HideInInspector] public bool attackMode = false;
     public GameObject hotZone;
     public GameObject triggerArea;
-    public int dmg;
+ 
     #endregion
-    private bool detected = true;
+
 
     void Awake()
     {
@@ -95,20 +95,6 @@ public class enemyBehavior : MonoBehaviour
         transform.eulerAngles = rotation;
     }
 
-    void OnTriggerEnter2D(Collider2D player)
-    {
-        if (player.gameObject.tag == "Player" && detected)
-        {
-            StartCoroutine(invincibleTime());
-            //Debug.Log("Player Detected! KILL!!!");
-            PlayerPrefs.SetInt("Hp", PlayerPrefs.GetInt("Hp") - dmg);
-        }
-        
-    }
-    IEnumerator invincibleTime()
-    {
-        detected = false;
-        yield return new WaitForSeconds(0.5f);
-        detected = true;
-    }
+    
+    
 }

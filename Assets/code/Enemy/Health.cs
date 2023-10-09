@@ -7,7 +7,8 @@ public class Health : MonoBehaviour
     [SerializeField] private int health = 3;
     private int max_health = 3;
     private CameraBoundSetting cameraBoundSetting; // 添加 CameraBoundSetting 的引用
-
+    public int dmg;
+    private bool detected = true;
     void Start()
     {
         // 在 Start 方法中查找 CameraBoundSetting 並設置引用
@@ -44,4 +45,22 @@ public class Health : MonoBehaviour
         if (transform.parent.gameObject != null) Destroy(transform.parent.gameObject);
         if (transform.parent.parent.gameObject != null) Destroy(transform.parent.parent.gameObject);
     }
+
+    void OnTriggerEnter2D(Collider2D player)
+    {
+        if (player.gameObject.tag == "Player" && detected)
+        {
+            StartCoroutine(invincibleTime());
+            //Debug.Log("Player Detected! KILL!!!");
+            PlayerPrefs.SetInt("Hp", PlayerPrefs.GetInt("Hp") - dmg);
+        }
+        
+    }
+    IEnumerator invincibleTime()
+    {
+        detected = false;
+        yield return new WaitForSeconds(0.5f);
+        detected = true;
+    }
+
 }
