@@ -13,6 +13,6 @@ public class Menu : MonoBehaviour
     }
     public void button()
     {
-        SceneManager.LoadScene("Sence1");
+        SceneManager.LoadScene("Factory01");
     }
 }
