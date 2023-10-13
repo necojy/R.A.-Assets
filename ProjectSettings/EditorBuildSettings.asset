@@ -9,12 +9,18 @@ EditorBuildSettings:
     path: Assets/Scenes/Menu.unity
     guid: d71415ae7f7c29e4fb101d07b18b58c3
   - enabled: 1
-    path: Assets/Scenes/Factory01.unity
-    guid: 6ae76ac2e136a88428a49240ed6b6e50
-  - enabled: 1
     path: Assets/Scenes/Factory02.unity
     guid: 347d8ad3aab707d4b976768c07ff095b
   - enabled: 1
     path: Assets/Scenes/Factory03.unity
     guid: fe22a98d84413f142b21a57beac597af
+  - enabled: 1
+    path: Assets/Scenes/Factory04.unity
+    guid: 7ba0e9bb46fa0d24e90e5e2ab0dd0514
+  - enabled: 1
+    path: Assets/Scenes/Factory05.unity
+    guid: 98f3af9ee3398304d91c595aaa97772f
+  - enabled: 1
+    path: Assets/Scenes/End.unity
+    guid: ffbb66d801e83db409048a5a416cd667
   m_configObjects: {}
