@@ -5,41 +5,41 @@ using UnityEngine;
 public class EnterBossRoom : MonoBehaviour
 {
     #region 要消失的物件
-    public CollapseFloor[] collapseFloor;  
+    public CollapseFloor[] collapseFloor;
     private int count = 0;
     #endregion
-    
+
     #region 螢幕搖晃參數
     public CameraShake cameraShake;
     public float duration = 1.0f;
     public float magnitude = 1f;
     public float newViewSize = 65f;
     #endregion
-    
+
     private CameraMove cameraMove;
 
-    private void Start() 
+    private void Start()
     {
         cameraMove = GameObject.Find("CameraMove").GetComponent<CameraMove>();
     }
-    private void OnTriggerEnter2D(Collider2D other) 
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        if(other.CompareTag("Player"))
-        { 
+        if (other.CompareTag("Player"))
+        {
             StartCoroutine(TimeToBrakFloor());
-            StartCoroutine(cameraShake.Shake(duration,magnitude));
+            StartCoroutine(cameraShake.Shake(duration, magnitude));
             StartCoroutine(TimeToDel());
         }
-    } 
+    }
     IEnumerator TimeToBrakFloor()
     {
-        while(count < collapseFloor.Length)
+        while (count < collapseFloor.Length)
         {
-            if(collapseFloor[count] != null) collapseFloor[count++].CanBreak = true;
+            if (collapseFloor[count] != null) collapseFloor[count++].CanBreak = true;
             AudioManager.Instance.PlayItem("BreakFloor");
             yield return new WaitForSeconds(0.25f);
         }
-        
+
     }
     IEnumerator TimeToDel()
     {
