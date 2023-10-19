@@ -8,7 +8,6 @@ public class doubleJump : MonoBehaviour
     public GameObject floor;
     public GameObject floorPosition;
     public Vector2 startPosition;
-    public bool doubleJumpSkill = false;
     #endregion
 
     void Start()
@@ -21,7 +20,8 @@ public class doubleJump : MonoBehaviour
     {
         if (collider.gameObject.tag == "Player")
         {
-            doubleJumpSkill = true;
+            PlayerMove playerMove= collider.GetComponent<PlayerMove>();
+            playerMove.doubleJumpSkill = true;
             floor.transform.position = startPosition;
             floor.gameObject.SetActive(false);
             gameObject.SetActive(false);
