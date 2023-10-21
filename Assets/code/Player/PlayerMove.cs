@@ -38,7 +38,7 @@ public class PlayerMove : MonoBehaviour
     public bool canMove = true;
     private bool canJump = true;
     private bool canDoubleJump=false;
-    public bool doubleJumpSkill=false;
+    public bool doubleJumpSkill;
 
     private void Start()
     {
