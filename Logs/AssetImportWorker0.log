@@ -15,7 +15,7 @@ C:/Users/User/Desktop/programs/R_A/R.A.-Assets
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-55808
+58444
 Successfully changed project path to: C:/Users/User/Desktop/programs/R_A/R.A.-Assets
 C:/Users/User/Desktop/programs/R_A/R.A.-Assets
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -47,11 +47,11 @@ C:/Users/User/Desktop/programs/R_A/R.A.-Assets
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [26220] Host "[IP] 192.168.56.1 [Port] 0 [Flags] 2 [Guid] 2262162615 [EditorId] 2262162615 [Version] 1048832 [Id] WindowsEditor(7,MSI) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [17140] Host "[IP] 192.168.56.1 [Port] 0 [Flags] 2 [Guid] 2476459295 [EditorId] 2476459295 [Version] 1048832 [Id] WindowsEditor(7,MSI) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [26220] Host "[IP] 192.168.56.1 [Port] 0 [Flags] 2 [Guid] 2262162615 [EditorId] 2262162615 [Version] 1048832 [Id] WindowsEditor(7,MSI) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [17140] Host "[IP] 192.168.56.1 [Port] 0 [Flags] 2 [Guid] 2476459295 [EditorId] 2476459295 [Version] 1048832 [Id] WindowsEditor(7,MSI) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
-Refreshing native plugins compatible for Editor in 96.85 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 99.28 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.21f1 (1b156197d683)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.21f1/Editor/Data/Resources/UnitySubsystems
@@ -67,89 +67,89 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.21f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.21f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.21f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56960
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56164
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.21f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.014457 seconds.
+Registered in 0.013114 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 104.22 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 103.98 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.726 seconds
+- Completed reload, in  0.773 seconds
 Domain Reload Profiling:
-	ReloadAssembly (726ms)
-		BeginReloadAssembly (142ms)
+	ReloadAssembly (774ms)
+		BeginReloadAssembly (136ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (468ms)
-			LoadAssemblies (139ms)
+		EndReloadAssembly (521ms)
+			LoadAssemblies (133ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (112ms)
+			SetupTypeCache (105ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (31ms)
-			SetupLoadedEditorAssemblies (269ms)
+			RebuildScriptCaches (27ms)
+			SetupLoadedEditorAssemblies (334ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (10ms)
+				InitializePlatformSupportModulesInManaged (8ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (104ms)
 				BeforeProcessingInitializeOnLoad (1ms)
-				ProcessInitializeOnLoadAttributes (113ms)
-				ProcessInitializeOnLoadMethodAttributes (41ms)
+				ProcessInitializeOnLoadAttributes (171ms)
+				ProcessInitializeOnLoadMethodAttributes (50ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.009730 seconds.
+Registered in 0.009963 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\User\Desktop\programs\R_A\R.A.-Assets\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\User\Desktop\programs\R_A\R.A.-Assets\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 93.32 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 101.49 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.306 seconds
+- Completed reload, in  1.347 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1307ms)
-		BeginReloadAssembly (146ms)
+	ReloadAssembly (1348ms)
+		BeginReloadAssembly (130ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (7ms)
+			DisableScriptedObjects (5ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (22ms)
-		EndReloadAssembly (1038ms)
-			LoadAssemblies (152ms)
+			CreateAndSetChildDomain (19ms)
+		EndReloadAssembly (1104ms)
+			LoadAssemblies (161ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (229ms)
+			SetupTypeCache (272ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (60ms)
-			SetupLoadedEditorAssemblies (575ms)
+			RebuildScriptCaches (61ms)
+			SetupLoadedEditorAssemblies (579ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (6ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (93ms)
-				BeforeProcessingInitializeOnLoad (106ms)
-				ProcessInitializeOnLoadAttributes (318ms)
-				ProcessInitializeOnLoadMethodAttributes (39ms)
-				AfterProcessingInitializeOnLoad (12ms)
+				RefreshPlugins (102ms)
+				BeforeProcessingInitializeOnLoad (116ms)
+				ProcessInitializeOnLoadAttributes (302ms)
+				ProcessInitializeOnLoadMethodAttributes (38ms)
+				AfterProcessingInitializeOnLoad (14ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (6ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
-Refreshing native plugins compatible for Editor in 0.72 ms, found 4 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.07 seconds
+Refreshing native plugins compatible for Editor in 0.78 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3997 Unused Serialized files (Serialized files now loaded: 0)
 Unloading 54 unused Assets / (299.9 KB). Loaded Objects now: 4450.
-Memory consumption went from 153.4 MB to 153.1 MB.
-Total: 3.881800 ms (FindLiveObjects: 0.461600 ms CreateObjectMapping: 0.310400 ms MarkObjects: 2.906500 ms  DeleteObjects: 0.202200 ms)
+Memory consumption went from 153.3 MB to 153.0 MB.
+Total: 3.472100 ms (FindLiveObjects: 0.306000 ms CreateObjectMapping: 0.303900 ms MarkObjects: 2.698500 ms  DeleteObjects: 0.163100 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -163,7 +163,127 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 562178.255345 seconds.
-  path: Assets/Scenes/Factory04.unity
-  artifactKey: Guid(7ba0e9bb46fa0d24e90e5e2ab0dd0514) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Factory04.unity using Guid(7ba0e9bb46fa0d24e90e5e2ab0dd0514) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c70bf8cfaa7c074d559e394cba76b371') in 0.008587 seconds 
+  Time since last request: 673396.087538 seconds.
+  path: Assets/Sprite/Background/02.PNG
+  artifactKey: Guid(d55aed04c11831b4b8e4accd1c6262d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprite/Background/02.PNG using Guid(d55aed04c11831b4b8e4accd1c6262d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3d6f2d9645845ff258cf94860f02be33') in 0.179007 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Sprite/AI Assets/Isometric_Scifi_Buildings_multiple_rust_machines_with_Steampun_0__2_-removebg-preview.png
+  artifactKey: Guid(8278dc75f78358448abf8147b1ee730a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprite/AI Assets/Isometric_Scifi_Buildings_multiple_rust_machines_with_Steampun_0__2_-removebg-preview.png using Guid(8278dc75f78358448abf8147b1ee730a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '70164c880e332c6712d028e741f03523') in 0.043011 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000111 seconds.
+  path: Assets/Sprite/AI Assets/myedit_ai_image_1019102059.jpg
+  artifactKey: Guid(ef7e2a94dd6ffd74f967450f063eee2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprite/AI Assets/myedit_ai_image_1019102059.jpg using Guid(ef7e2a94dd6ffd74f967450f063eee2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c46149b6a35729cef5075351f0e24228') in 0.143754 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Sprite/Background/boss02.PNG
+  artifactKey: Guid(a59f61e148409ea449b864990b851d88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprite/Background/boss02.PNG using Guid(a59f61e148409ea449b864990b851d88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f9905cfbffa8c44f73f3b2ea52f14c56') in 0.128337 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000049 seconds.
+  path: Assets/Sprite/AI Assets/Isometric_Scifi_Buildings_multiple_rust_machines_with_Steampun_3__3_-removebg-preview.png
+  artifactKey: Guid(bfbf37e58678fef4dbf91b2fb277efa6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprite/AI Assets/Isometric_Scifi_Buildings_multiple_rust_machines_with_Steampun_3__3_-removebg-preview.png using Guid(bfbf37e58678fef4dbf91b2fb277efa6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cb43697c434c323e0e4d3a340cc1b314') in 0.065951 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Sprite/AI Assets/Isometric_Scifi_Buildings_multiple_rust_machines_with_Steampun_2__3_-removebg-preview.png
+  artifactKey: Guid(12c1969461735784cb8147450f75f256) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprite/AI Assets/Isometric_Scifi_Buildings_multiple_rust_machines_with_Steampun_2__3_-removebg-preview.png using Guid(12c1969461735784cb8147450f75f256) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '886d560b7050d07897a8096db6de1552') in 0.049666 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Sprite/AI Assets/myedit_ai_image_1019102244.jpg
+  artifactKey: Guid(5af9c2fe961f45d4aad72faa21c250fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprite/AI Assets/myedit_ai_image_1019102244.jpg using Guid(5af9c2fe961f45d4aad72faa21c250fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f4d2e492d6e874858712208d7e35aca9') in 0.141930 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000145 seconds.
+  path: Assets/Sprite/AI Assets/Isometric_Scifi_Buildings_multiple_rust_machines_with_Steampun_0__1_-removebg-preview.png
+  artifactKey: Guid(693a6cd45e07d0948b08f58cb12670f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprite/AI Assets/Isometric_Scifi_Buildings_multiple_rust_machines_with_Steampun_0__1_-removebg-preview.png using Guid(693a6cd45e07d0948b08f58cb12670f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d77cf14fe2be64157a550fc109c5c00') in 0.062749 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000174 seconds.
+  path: Assets/Sprite/Background/boss01.PNG
+  artifactKey: Guid(2c8b8b3d7465d8448ae6312c34ae4467) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprite/Background/boss01.PNG using Guid(2c8b8b3d7465d8448ae6312c34ae4467) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '544d5b510ceea2b438dac5a1fc7c4ccf') in 0.105694 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Assets/Sprite/AI Assets/Isometric_Scifi_Buildings_multiple_rust_machines_with_Steampun_0__3_-removebg-preview.png
+  artifactKey: Guid(3c269d72fe4150248b9ea872ed9c11d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprite/AI Assets/Isometric_Scifi_Buildings_multiple_rust_machines_with_Steampun_0__3_-removebg-preview.png using Guid(3c269d72fe4150248b9ea872ed9c11d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f3e5d0a528edc1e50cf2956b5a2d5cbe') in 0.045122 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000105 seconds.
+  path: Assets/Sprite/AI Assets/Isometric_Scifi_Buildings_multiple_rust_machines_with_Steampun_1__1_-removebg-preview.png
+  artifactKey: Guid(f7a299605dfab3f47a2492a6c7030caa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprite/AI Assets/Isometric_Scifi_Buildings_multiple_rust_machines_with_Steampun_1__1_-removebg-preview.png using Guid(f7a299605dfab3f47a2492a6c7030caa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6231b628848c98a68e0aeb23c0dcb488') in 0.043246 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Sprite/AI Assets/Isometric_Scifi_Buildings_multiple_rust_machines_with_Steampun_1__2_-removebg-preview.png
+  artifactKey: Guid(19531312b1ec211418047e75ce5b4e14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprite/AI Assets/Isometric_Scifi_Buildings_multiple_rust_machines_with_Steampun_1__2_-removebg-preview.png using Guid(19531312b1ec211418047e75ce5b4e14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ad34972c8672506a6eeb7d2fed34700') in 0.035114 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Sprite/AI Assets/Isometric_Scifi_Buildings_multiple_rust_machines_with_Steampun_2-removebg-preview.png
+  artifactKey: Guid(f0ebb0257eb1a7543bb17e97f506ac23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprite/AI Assets/Isometric_Scifi_Buildings_multiple_rust_machines_with_Steampun_2-removebg-preview.png using Guid(f0ebb0257eb1a7543bb17e97f506ac23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '22772ea7dc87df3eca6e8ba9d21c9e80') in 0.046849 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 416.690660 seconds.
+  path: Assets/Scenes/Factory03.unity
+  artifactKey: Guid(fe22a98d84413f142b21a57beac597af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Factory03.unity using Guid(fe22a98d84413f142b21a57beac597af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '82879dbcc3e588bc746bdd10e0e7aa26') in 0.003280 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1108.993850 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/LiberationSans SDF - Metalic Green.mat
+  artifactKey: Guid(8b29aaa3eec7468097ff07adfcf29ac9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/LiberationSans SDF - Metalic Green.mat using Guid(8b29aaa3eec7468097ff07adfcf29ac9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '61772a41bcff4de10c00ac3591dda27d') in 0.183900 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/LiberationSans SDF - Overlay.mat
+  artifactKey: Guid(9ad269c99dcf42b7aedefd83dd5a7b9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/LiberationSans SDF - Overlay.mat using Guid(9ad269c99dcf42b7aedefd83dd5a7b9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c65fa18385413a650bd4fc128aead5d') in 0.030452 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Roboto-Bold SDF - Drop Shadow.mat
+  artifactKey: Guid(b246c4190f4e46ec9352fe15a7b09ce0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Roboto-Bold SDF - Drop Shadow.mat using Guid(b246c4190f4e46ec9352fe15a7b09ce0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '39f1b0377816025b3752644948b468eb') in 0.058874 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Fallback.asset
+  artifactKey: Guid(2e498d1c8094910479dc3e1b768306a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Fallback.asset using Guid(2e498d1c8094910479dc3e1b768306a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9aa6e52de20a3fde1374e8aeb921c8a3') in 0.037001 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Roboto-Bold SDF.asset
+  artifactKey: Guid(5302535af1044152a457ed104f1f4b91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Roboto-Bold SDF.asset using Guid(5302535af1044152a457ed104f1f4b91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dec0143a30fcfcf7861befa852fbca0c') in 0.026975 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Oswald Bold SDF.asset
+  artifactKey: Guid(0161d805a3764c089bef00bfe00793f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Oswald Bold SDF.asset using Guid(0161d805a3764c089bef00bfe00793f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '65b5c10ff4bdc395c64a2ea3cbe9e49d') in 0.019916 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Roboto-Bold SDF - Surface.mat
+  artifactKey: Guid(e6b276ec991f467aa14ef1f3cc665993) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Roboto-Bold SDF - Surface.mat using Guid(e6b276ec991f467aa14ef1f3cc665993) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fa738e9cf518c81bedcc7220168f944b') in 0.122781 seconds 
