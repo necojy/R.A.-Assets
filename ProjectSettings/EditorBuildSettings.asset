@@ -16,7 +16,7 @@ EditorBuildSettings:
     guid: fe22a98d84413f142b21a57beac597af
   - enabled: 1
     path: Assets/Scenes/Factory04.unity
-    guid: 7ba0e9bb46fa0d24e90e5e2ab0dd0514
+    guid: f24b65da7915440ec9fef3629c9500d5
   - enabled: 1
     path: Assets/Scenes/Factory05.unity
     guid: 98f3af9ee3398304d91c595aaa97772f
