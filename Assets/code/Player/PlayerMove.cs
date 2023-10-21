@@ -19,6 +19,7 @@ public class PlayerMove : MonoBehaviour
     public float speed;
     public float airspeed;
     public float jumpforce;
+    public float doubleJumpSpeed;
     public float sprintSpeed;
     public float sprintTime;
     public bool jumpInput;
@@ -36,7 +37,9 @@ public class PlayerMove : MonoBehaviour
     public float repel = 5f;
     public bool canMove = true;
     private bool canJump = true;
-    
+    private bool canDoubleJump=false;
+    public bool doubleJumpSkill;
+
     private void Start()
     {
         animator = GetComponent<Animator>();
@@ -167,17 +170,28 @@ public class PlayerMove : MonoBehaviour
 
                 Vector2 JumpVel = new (0.0f, jumpforce);
                 rb.velocity = Vector2.up * JumpVel;
-                //canDoubleJump = true;
+                if(doubleJumpSkill)
+                    canDoubleJump = true;
             }
-            /*else
+            else
             {
                 if (canDoubleJump)
                 {
+                    if (AudioManager.Instance.PlayerSource.isPlaying)
+                    {
+                        AudioManager.Instance.PlayerSource.Stop();
+                    }
+
+                    animator.SetBool("CanJump", true);
+                    float animationLength = animator.GetCurrentAnimatorStateInfo(0).length;
+                    Invoke("StopAnimation", animationLength);
+                    AudioManager.Instance.PlayPlayer("Jump");
+
                     Vector2 doubleJumpVel = new Vector2(0.0f, doubleJumpSpeed);
-                    myRigidBody.velocity = Vector2.up * doubleJumpVel;
+                    rb.velocity = Vector2.up * doubleJumpVel;
                     canDoubleJump = false;
                 }
-            }*/
+            }
         }
         if (jumpInputRelease && rb.velocity.y > 0)
         {
