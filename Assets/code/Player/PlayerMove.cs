@@ -37,7 +37,7 @@ public class PlayerMove : MonoBehaviour
     public float repel = 5f;
     public bool canMove = true;
     private bool canJump = true;
-    private bool canDoubleJump=false;
+    private bool canDoubleJump;
     public bool doubleJumpSkill;
 
     private void Start()
@@ -49,7 +49,6 @@ public class PlayerMove : MonoBehaviour
         isInputEnabled = true;
         isSprintReset = true;
         isSprintable = true;
-        
     }
 
     private void Update()
@@ -62,6 +61,7 @@ public class PlayerMove : MonoBehaviour
             SprintControl();
         }
         GroundCheck();
+        doubleJumpSkill = intToBool(PlayerPrefs.GetInt("doubleJumpSkill", 0));
     }
 
     private void FixedUpdate() 
@@ -170,8 +170,10 @@ public class PlayerMove : MonoBehaviour
 
                 Vector2 JumpVel = new (0.0f, jumpforce);
                 rb.velocity = Vector2.up * JumpVel;
-                if(doubleJumpSkill)
+                if (doubleJumpSkill)
                     canDoubleJump = true;
+                else
+                    canDoubleJump = false;
             }
             else
             {
@@ -347,4 +349,12 @@ public class PlayerMove : MonoBehaviour
         canJump = true;
 
    }
+
+    bool intToBool(int val)
+    {
+        if (val != 0)
+            return true;
+        else
+            return false;
+    }
 }

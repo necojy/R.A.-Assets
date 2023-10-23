@@ -15,7 +15,7 @@ public class Ability : MonoBehaviour
     void Start()
     {
         sprintImage.fillAmount = 0;
-        playerMove = GetComponent<PlayerMove>();
+        playerMove = GameObject.Find("Player").GetComponent<PlayerMove>();
     }
 
     void Update()

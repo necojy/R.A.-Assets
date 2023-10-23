@@ -20,8 +20,7 @@ public class doubleJump : MonoBehaviour
     {
         if (collider.gameObject.tag == "Player")
         {
-            PlayerMove playerMove= collider.GetComponent<PlayerMove>();
-            playerMove.doubleJumpSkill = true;
+            PlayerPrefs.SetInt("doubleJumpSkill", 1);
             floor.transform.position = startPosition;
             floor.gameObject.SetActive(false);
             gameObject.SetActive(false);
