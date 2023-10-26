@@ -7,10 +7,12 @@ using UnityEngine.SceneManagement;
 public class Menu : MonoBehaviour
 {
     // Start is called before the first frame update
+    public int hp = 5;
+    public bool resetSavePoint;
     void Start()
     {
-        if (PlayerPrefs.GetInt("Hp") == 0)
-            PlayerPrefs.SetInt("Hp", 5);
+        PlayerPrefs.SetInt("Hp", hp);
+        PlayerPrefs.SetInt("resetSavePoint", resetSavePoint ? 1 : 0);
     }
     public void button()
     {

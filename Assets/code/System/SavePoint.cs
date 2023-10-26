@@ -1,18 +1,19 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+
 
 public class SavePoint : MonoBehaviour
 {
     void OnTriggerEnter2D(Collider2D player)
     {
-        if (player.gameObject.tag == "Player" && PlayerPrefs.GetInt("savePoint") != transform.GetSiblingIndex())
+        if (player.gameObject.tag == "Player")
         {
-            AudioManager.Instance.PlayUI("SavePoint");
-            PlayerPrefs.SetInt("savePoint", transform.GetSiblingIndex());
-            //PlayerPrefs.SetInt("saveHp", PlayerPrefs.GetInt("Hp"));
-            //PlayerPrefs.SetInt("saveState", PlayerPrefs.GetInt("State"));
-            Debug.Log("Savingpoint" + transform.GetSiblingIndex());
+            string sencesName = SceneManager.GetActiveScene().name;
+            PlayerPrefs.SetFloat(sencesName + "x", transform.position.x);
+            PlayerPrefs.SetFloat(sencesName + "y", transform.position.y);
+            Debug.Log("savepoint" + transform.position.x + transform.position.y);
         }
     }
 }

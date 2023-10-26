@@ -6,13 +6,25 @@ using UnityEngine.SceneManagement;
 public class UI : MonoBehaviour
 {
     public ObjectStack heart;
-    public float Heart_space;   
-    Transform Player_pos;
-    public bool reset;
+    public float Heart_space;
+    GameObject Player;
     // Start is called before the first frame update
     void Start()
     {
-        Player_pos = GameObject.FindWithTag("Player").transform;
+        string sencesName = SceneManager.GetActiveScene().name;
+        Player = GameObject.FindWithTag("Player");
+        //確定要移位
+        if (PlayerPrefs.GetInt("resetSavePoint") == 0)
+        {
+            float px = PlayerPrefs.GetFloat(sencesName + "x");
+            float py = PlayerPrefs.GetFloat(sencesName + "y");
+            Player.transform.position = new Vector3(px, py, 0);
+        }
+        else
+        {
+            PlayerPrefs.SetFloat(sencesName + "x", Player.transform.position.x);
+            PlayerPrefs.SetFloat(sencesName + "y", Player.transform.position.y);
+        }
     }
 
     // Update is called once per frame
@@ -22,7 +34,7 @@ public class UI : MonoBehaviour
     }
     void SetHp()
     {
-        if (PlayerPrefs.GetInt("Hp") > 0 && Player_pos.position.y > -50)
+        if (PlayerPrefs.GetInt("Hp") > 0 && Player.transform.position.y > -100)
         {
             int change = PlayerPrefs.GetInt("Hp") - heart.get_top();
             if (change != 0) Debug.Log(change);

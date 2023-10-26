@@ -7,8 +7,11 @@ public class CameraMove : MonoBehaviour
     public Transform target;
     public Vector2 offset;
     public double smoothing = 1;
-
     public Vector2 minPos,maxPos;
+
+    private void Start() {
+        target = GameObject.FindWithTag("Player").transform;
+    }
     void FixedUpdate()
     {
         if (target != null)
