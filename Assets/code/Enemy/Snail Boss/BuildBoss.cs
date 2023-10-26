@@ -18,22 +18,23 @@ public class BuildBoss : MonoBehaviour
 
     private bool creating = false;
     private PlayerMove playerMove;
-    private void Start() 
+    private void Start()
     {
         cameraMove = GameObject.Find("CameraMove").GetComponent<CameraMove>();
         playerMove = GameObject.Find("Player").GetComponent<PlayerMove>();
-        InitialPos.position = new Vector3(InitialPos.position.x -5f,InitialPos.position.y + 5f, InitialPos.position.z);
+        InitialPos.position = new Vector3(InitialPos.position.x - 5f, InitialPos.position.y + 5f, InitialPos.position.z);
     }
-    private void OnTriggerEnter2D(Collider2D other) 
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        if(other.CompareTag("Player"))
+        if (other.CompareTag("Player"))
         {
-           if(!creating)
-           {
+            if (!creating)
+            {
+                Rigidbody2D playRb = other.GetComponent<Rigidbody2D>();
+                playRb.velocity = Vector2.zero;
                 creating = true;
-                
                 StartCoroutine(createBoss());
-           } 
+            }
         }
     }
 
@@ -46,7 +47,7 @@ public class BuildBoss : MonoBehaviour
         playerMove.jumpforce = 0;
         playerMove.isInputEnabled = false;
 
-        StartCoroutine(cameraShake.Shake(duration,magnitude));
+        StartCoroutine(cameraShake.Shake(duration, magnitude));
 
         //更改相機位置
         if (target != null)
@@ -55,11 +56,11 @@ public class BuildBoss : MonoBehaviour
             cameraMove.target = target;
         }
         Camera.main.fieldOfView = Camera.main.fieldOfView + 8f;
-        
+
         yield return new WaitForSeconds(createTime);
-        StartCoroutine(cameraShake.Shake(duration,magnitude));
+        StartCoroutine(cameraShake.Shake(duration, magnitude));
         Camera.main.fieldOfView = Camera.main.fieldOfView + 8f;
-        GameObject Boss = Instantiate(Bossprefab,InitialPos.position,Quaternion.identity);
+        GameObject Boss = Instantiate(Bossprefab, InitialPos.position, Quaternion.identity);
         yield return new WaitForSeconds(0.5f);
 
         //恢復人物移動

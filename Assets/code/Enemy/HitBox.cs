@@ -6,6 +6,8 @@ public class HitBox : MonoBehaviour
 {
     public int dmg = 1;
     public float repel = 20f;//被擊退的參數
+
+    public bool CanBeAttack = true;
     public bool needParendObject = true;
     private bool ishurt = false;
     private bool detected = true;
@@ -29,7 +31,7 @@ public class HitBox : MonoBehaviour
             PlayerPrefs.SetInt("Hp", PlayerPrefs.GetInt("Hp") - dmg);
         }
 
-        if (other.gameObject.CompareTag("AttackArea"))
+        if (other.gameObject.CompareTag("AttackArea") && CanBeAttack)
         {
             if (!ishurt)
             {

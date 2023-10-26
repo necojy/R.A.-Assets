@@ -53,6 +53,7 @@ public class UI : MonoBehaviour
         }
         else
         {
+            AudioManager.Instance.SnailBossBackgroundSource.Stop();
             Reset();
         }
     }

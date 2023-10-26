@@ -1744,6 +1744,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dmg: 1
   repel: 5
+  CanBeAttack: 1
+  needParendObject: 1
 --- !u!114 &2795066527447540315
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1756,4 +1758,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6bc47a422a35be04797f42ab688096a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 10
+  health: 5
+  dmg: 0

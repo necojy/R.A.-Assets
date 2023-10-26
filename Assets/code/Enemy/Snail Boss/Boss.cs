@@ -57,7 +57,7 @@ public class Boss : MonoBehaviour {
     {     
         #region boss型態切換
 
-        if(BossHealth.health > (TotalHeal / 8 * 7))
+        if(BossHealth.health > (TotalHeal / 6 * 5))
         {
             if(!firstType)
             {
@@ -66,12 +66,12 @@ public class Boss : MonoBehaviour {
             }
         }
 
-        else if(BossHealth.health <= (TotalHeal / 8 * 7) && BossHealth.health >= (TotalHeal / 8 * 6))
+        else if(BossHealth.health <= (TotalHeal / 6 * 5) && BossHealth.health >= (TotalHeal / 6 * 4))
         {      
             SecondType = true;
         }
 
-        else if(BossHealth.health < (TotalHeal / 8 * 6))
+        else if(BossHealth.health < (TotalHeal / 6 * 3))
         {
             if(!thirdType)
             {
