@@ -861,7 +861,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hp: 5
-  resetSavePoint: 0
+  resetSavePoint: 1
 --- !u!4 &1525460524
 Transform:
   m_ObjectHideFlags: 0
