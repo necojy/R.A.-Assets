@@ -13,6 +13,7 @@ public class AndroidRobot : MonoBehaviour
     private bool isWall = false;
     private bool isAttack = false;
     private bool isFlip = false;
+    public bool isHit = false;
     private GameObject Player;  
 
     private void Start()
@@ -29,7 +30,7 @@ public class AndroidRobot : MonoBehaviour
         {
             if (isAttack)
             {
-                AudioManager.Instance.MonsterSource.Stop();
+                //AudioManager.Instance.MonsterSource.Stop();
 
                 if (isWall)
                 {
@@ -66,6 +67,10 @@ public class AndroidRobot : MonoBehaviour
             }
 
         }
+        if (isHit)
+        {
+            AudioManager.Instance.PlayMonster("RobotHit");
+        }
 
     }
 
@@ -74,6 +79,10 @@ public class AndroidRobot : MonoBehaviour
         if (other.gameObject.layer == LayerMask.NameToLayer("Ground"))
         {
             isGround = true;
+        }
+        if (other.CompareTag("AttackArea"))// be attacked by player
+        {
+            isHit = true;
         }
     }
     private void OnTriggerStay2D(Collider2D other)
@@ -110,6 +119,10 @@ public class AndroidRobot : MonoBehaviour
             animator.SetBool("canRun", false);
             moveSpeed = tempSpeed;
             isAttack = false;
+        }
+        if (other.CompareTag("AttackArea"))
+        {
+            isHit = false;
         }
     }
 

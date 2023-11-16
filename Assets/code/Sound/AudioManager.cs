@@ -27,6 +27,7 @@ public class AudioManager : MonoBehaviour
     [HideInInspector] public Boolean isFiringRpgAPlaying = false;
     [HideInInspector] public Boolean isFiringRpgBPlaying = false;
     [HideInInspector] public Boolean isTransportBeltPlaying = false;
+    [HideInInspector] public Boolean isRobotHitPlaying = false;
 
 
     public static Sound currentPlayingSound;
@@ -109,6 +110,18 @@ public class AudioManager : MonoBehaviour
                 StartCoroutine(PlayRobotWalkCoroutine(s));
             }
         }
+        else if (s.name == "RobotHit")
+        {
+            if (isRobotHitPlaying)
+            {
+                return;
+            }
+            else
+            {
+                StartCoroutine(PlayRobotHitCoroutine(s));
+            }
+        }
+
     }
     public void PlayItem(string name)
     {
@@ -195,6 +208,15 @@ public class AudioManager : MonoBehaviour
         yield return new WaitForSeconds(s.clip.length);
         isRobotWalkPlaying = false;
     }
+    private IEnumerator PlayRobotHitCoroutine(Sound s)
+    {
+        Debug.Log(s.name+" sound");
+        isRobotHitPlaying = true;
+        MonsterSource.PlayOneShot(s.clip);
+        yield return new WaitForSeconds(s.clip.length);
+        isRobotHitPlaying = false;
+    }
+
     private IEnumerator PlayTransportBeltCoroutine(Sound s)
     {
         isTransportBeltPlaying = true;

@@ -712,13 +712,13 @@ MonoBehaviour:
     source: {fileID: 0}
     loop: 0
   - name: Jump
-    clip: {fileID: 8300000, guid: 01f54c2721496e04ab94c3836250859f, type: 3}
+    clip: {fileID: 8300000, guid: ba03db6e01c881245a94eb928327054d, type: 3}
     volume: 1
     pitch: 0
     source: {fileID: 0}
     loop: 0
   - name: Attack
-    clip: {fileID: 8300000, guid: cd6a3ced01955ec4ca9ff380a2579e5e, type: 3}
+    clip: {fileID: 8300000, guid: 560a05926ead3a54592d12be80381fb0, type: 3}
     volume: 1
     pitch: 0
     source: {fileID: 0}
@@ -744,6 +744,12 @@ MonoBehaviour:
     loop: 0
   - name: RobotWalk
     clip: {fileID: 8300000, guid: 5bb315e7045b38d44bdc05b6068a0e2c, type: 3}
+    volume: 1
+    pitch: 0
+    source: {fileID: 0}
+    loop: 0
+  - name: RobotHit
+    clip: {fileID: 8300000, guid: 8dff9f56b1fa05146a40cd961c3453b2, type: 3}
     volume: 1
     pitch: 0
     source: {fileID: 0}
@@ -851,6 +857,7 @@ MonoBehaviour:
   isFiringRpgAPlaying: 0
   isFiringRpgBPlaying: 0
   isTransportBeltPlaying: 0
+  isRobotHitPlaying: 0
 --- !u!1 &6360044052677929959
 GameObject:
   m_ObjectHideFlags: 0

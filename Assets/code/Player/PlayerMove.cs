@@ -49,6 +49,7 @@ public class PlayerMove : MonoBehaviour
         isInputEnabled = true;
         isSprintReset = true;
         isSprintable = true;
+        PlayerPrefs.SetInt("doubleJumpSkill", 0);
     }
 
     private void Update()
@@ -188,7 +189,7 @@ public class PlayerMove : MonoBehaviour
                     float animationLength = animator.GetCurrentAnimatorStateInfo(0).length;
                     Invoke("StopAnimation", animationLength);
                     AudioManager.Instance.PlayPlayer("Jump");
-
+                    
                     Vector2 doubleJumpVel = new Vector2(0.0f, doubleJumpSpeed);
                     rb.velocity = Vector2.up * doubleJumpVel;
                     canDoubleJump = false;
