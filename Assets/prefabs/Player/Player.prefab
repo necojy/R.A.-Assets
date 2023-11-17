@@ -942,8 +942,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8305101123358066360}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.393, y: -0.122, z: 0}
-  m_LocalScale: {x: 1.47217, y: 1.57629, z: 0}
+  m_LocalPosition: {x: 1.098, y: -0.31, z: 0}
+  m_LocalScale: {x: 1.47217, y: 0.3708307, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7236848590533061918}
@@ -1454,7 +1454,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   attackarea: {fileID: 8305101123358066360}
-  attackingtime: 0.1
+  attackingtime: 1
   isAttackable: 0
   attackState: 0
 --- !u!114 &8305101123830790846
