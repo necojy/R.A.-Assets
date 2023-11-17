@@ -28,6 +28,7 @@ public class BossHealth : MonoBehaviour
             AudioManager.Instance.SnailBossSource.Stop();
             Destroy(gameObject.GetComponent<BoxCollider2D>());
             Destroy(gameObject.GetComponent<SpriteRenderer>());
+            Destroy(gameObject.GetComponent<Boss>());
 
             if (target != null)
             {

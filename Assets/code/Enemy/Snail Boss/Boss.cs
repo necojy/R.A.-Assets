@@ -57,7 +57,7 @@ public class Boss : MonoBehaviour {
     {     
         #region boss型態切換
 
-        if(BossHealth.health > (TotalHeal / 6 * 5))
+        if(BossHealth.health > (TotalHeal / 4 * 3))
         {
             if(!firstType)
             {
@@ -66,12 +66,12 @@ public class Boss : MonoBehaviour {
             }
         }
 
-        else if(BossHealth.health <= (TotalHeal / 6 * 5) && BossHealth.health >= (TotalHeal / 6 * 4))
+        else if(BossHealth.health <= (TotalHeal / 4 * 3) && BossHealth.health >= (TotalHeal / 4 * 2))
         {      
             SecondType = true;
         }
 
-        else if(BossHealth.health < (TotalHeal / 6 * 3))
+        else if(BossHealth.health < (TotalHeal / 4 * 2))
         {
             if(!thirdType)
             {
@@ -206,7 +206,7 @@ public class Boss : MonoBehaviour {
     void Shoot1Above() 
     {
         AudioManager.Instance.PlaySnailBoss("FiringRpgA");
-        float bulletRotationRange = Random.Range(0,45);
+        float bulletRotationRange = Random.Range(15,45);
         float radians = bulletRotationRange * Mathf.PI / 180f;
 
         if(MoveToLeft) 
@@ -231,7 +231,7 @@ public class Boss : MonoBehaviour {
     {
         AudioManager.Instance.PlaySnailBoss("FiringRpgB");
 
-        float bulletRotationRange = Random.Range(0,15);
+        float bulletRotationRange = Random.Range(0,10);
         float radians = bulletRotationRange * Mathf.PI / 180f;
         if(MoveToLeft) 
         {

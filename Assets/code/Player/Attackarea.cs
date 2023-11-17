@@ -39,7 +39,12 @@ public class Attackarea : MonoBehaviour
                 //     coll.transform.position = new Vector3((coll.transform.position.x - 1), coll.transform.position.y,0);
                 // }
             }
-            
+            if (coll.GetComponent<Bullet>() != null)
+            {
+                Bullet health = coll.GetComponent<Bullet>();
+                health.Damage(damage);
+                Debug.Log("hit");
+            }
         }
 
         else if (coll.gameObject.CompareTag("Boss"))
