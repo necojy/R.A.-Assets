@@ -2,18 +2,18 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.SceneManagement; 
+using UnityEngine.SceneManagement;
 
 public class BossHealth : MonoBehaviour
 {
     //public Slider healthBar;
-    public int health;    
+    public int health;
     bool detected = true;
     public int dmg;
     public Transform target;
     private CameraMove cameraMove;
 
-    private void Start() 
+    private void Start()
     {
         target = GameObject.Find("Player").transform;
         cameraMove = GameObject.Find("CameraMove").GetComponent<CameraMove>();
@@ -22,7 +22,7 @@ public class BossHealth : MonoBehaviour
     {
         //healthBar.value = health;
 
-        if(health <= 0)
+        if (health <= 0)
         {
             AudioManager.Instance.SnailBossBackgroundSource.Stop();
             AudioManager.Instance.SnailBossSource.Stop();
@@ -36,10 +36,12 @@ public class BossHealth : MonoBehaviour
                 cameraMove.target = target;
             }
             StartCoroutine(ZoomCameraOut());
-            if(Camera.main.fieldOfView <= 56f) 
+            if (Camera.main.fieldOfView <= 56f)
             {
                 cameraMove.smoothing = 1f;
                 Destroy(gameObject);
+                SceneManager.LoadScene("End");
+
             }
         }
     }
@@ -48,9 +50,9 @@ public class BossHealth : MonoBehaviour
     {
         health -= damage;
     }
-    private void OnTriggerEnter2D(Collider2D other) 
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        if( other.CompareTag("Player") && detected)
+        if (other.CompareTag("Player") && detected)
         {
             StartCoroutine(Invisible());
             PlayerPrefs.SetInt("Hp", PlayerPrefs.GetInt("Hp") - dmg);
@@ -65,9 +67,9 @@ public class BossHealth : MonoBehaviour
 
     private IEnumerator ZoomCameraOut()
     {
-        while(Camera.main.fieldOfView > 55f)
+        while (Camera.main.fieldOfView > 55f)
         {
-            Camera.main.fieldOfView = Mathf.Lerp(Camera.main.fieldOfView,55f,Time.deltaTime * 0.002f);
+            Camera.main.fieldOfView = Mathf.Lerp(Camera.main.fieldOfView, 55f, Time.deltaTime * 0.002f);
             yield return null;
         }
     }
