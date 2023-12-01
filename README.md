@@ -3,7 +3,7 @@
 Keyboard Controls : 
 A/D = move left or right                                                                                 
 S = go down(for wooden platforms only)                                                        
-<space> = jump                                                     
+"space" = jump                                                     
 J = attack                                                                                                          
 K = dash(only once)                                                     
 I = open box                                                     
