@@ -1,6 +1,6 @@
 # R.A.-Assets
 
-Keyboard Controls
+Keyboard Controls : 
 A/D = move left or right
 S = go down(for wooden platforms only)
 <space> = jump
