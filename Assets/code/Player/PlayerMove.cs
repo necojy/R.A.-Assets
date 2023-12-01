@@ -49,7 +49,6 @@ public class PlayerMove : MonoBehaviour
         isInputEnabled = true;
         isSprintReset = true;
         isSprintable = true;
-        PlayerPrefs.SetInt("doubleJumpSkill", 0);
     }
 
     private void Update()

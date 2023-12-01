@@ -20,6 +20,7 @@ public class CheckScenes : MonoBehaviour
         if (currentScene.name == "Factory02")
         {
             AudioManager.Instance.PlayBackground("Factory Map Music");
+            PlayerPrefs.SetInt("doubleJumpSkill", 0);
         }
     }
     public void Awake()
