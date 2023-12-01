@@ -23,3 +23,5 @@ only the most skilled and cunning will endure, and the destiny of the abandoned 
 ![initial scenes](https://github.com/necojy/R.A.-Assets/assets/52877238/acd8f297-c17a-402f-92f6-fabc26a7d2ee)
 ![test2](https://github.com/necojy/R.A.-Assets/assets/52877238/9ca8d752-2da4-422a-9719-cc0f70ac77ff)
 ![test3](https://github.com/necojy/R.A.-Assets/assets/52877238/a456a4bb-16e5-4f7c-9db4-84cf32901138)
+
+<h1>game position:  Game Download/R.A. Game/ra.exe</h1>
