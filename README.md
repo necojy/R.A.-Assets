@@ -3,11 +3,11 @@
 Keyboard Controls : 
 A/D = move left or right                                                                                 
 S = go down(for wooden platforms only)                                                        
-<space> = jump
-J = attack
-K = dash(only once)
-I = open box
-<esc> = pause game
+<space> = jump                                                     
+J = attack                                                                                                          
+K = dash(only once)                                                     
+I = open box                                                     
+<esc> = pause game                                                     
 
 Introduction:
 In the desolate expanse of the abandoned factory, you
