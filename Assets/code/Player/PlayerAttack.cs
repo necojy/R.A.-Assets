@@ -47,6 +47,7 @@ public class PlayerAttack : MonoBehaviour
         AudioManager.Instance.PlayPlayer("Attack");
 
         // 在動畫播放結束後執行回調函數
+        animator.SetBool("CanJump", false);
         animator.SetBool("Attack", true);
         float animationLength = animator.GetCurrentAnimatorStateInfo(0).length;
         Invoke("StopAnimation", animationLength);
