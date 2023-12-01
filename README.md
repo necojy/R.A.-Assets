@@ -9,7 +9,7 @@ K = dash(only once)
 I = open box                                                     
 <esc> = pause game                                                     
 
-Introduction://
+Introduction:  
 In the desolate expanse of the abandoned factory, you
 a resilient robot, find yourself besieged by a horde of violent, 
 corrupted machines hell-bent on your destruction. As you navigate the labyrinthine corridors and perilous platforms, 
